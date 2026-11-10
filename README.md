@@ -19,37 +19,37 @@ A bank ran a personal loan campaign on 5,000 customers, and only about 1 in 10 a
 └── README.md
 ```
 
-## Workflow
+Workflow
 1. Load the raw data into MySQL
 2. Clean the data in a SQL view (`vw_customers_clean`)
 3. Run the analysis queries
 4. Export the clean data to CSV
 5. Build the Power BI dashboard
 
-## Data Cleaning
+Data Cleaning
 - Ignored empty columns
 - Fixed negative Experience values using `ABS`
 - Padded short ZIP codes with a leading zero
 - Converted coded values (education, loan status and so on) into readable labels
 
-## Dashboard
-**Page 1: Overview.** KPI cards, loan status donut, acceptance rate by income band and education level, with age group and family size slicers.
-![Overview](powerbi/screenshots/page1_overview.png)
+ Dashboard
+Page 1: Overview.** KPI cards, loan status donut, acceptance rate by income band and education level, with age group and family size slicers.
+![Overview](powerbi/screenshots/PAGE_1.png)
 
-**Page 2: Behaviour.** Acceptance rate by CD account, card spend, online banking and credit card; income vs card spend scatter plot; income × education matrix.
-![Behaviour](powerbi/screenshots/page2_behaviour.png)
+Page 2: Behaviour.** Acceptance rate by CD account, card spend, online banking and credit card; income vs card spend scatter plot; income × education matrix.
+![Behaviour](powerbi/screenshots/PAGE_2.png)
 
-**Page 3: Targeting.** Top customer segments, key insight and recommendations.
-![Targeting](powerbi/screenshots/page3_targeting.png)
+Page 3: Targeting.** Top customer segments, key insight and recommendations.
+![Targeting](powerbi/screenshots/PAGE_3.png)
 
-### DAX Measures
+DAX Measures
 - Total Customers
 - Loan Customers
 - Acceptance Rate
 - Avg Income
 - Avg CC Spend
 
-## Key Findings
+Key Findings
 | Factor | Result |
 |---|---|
 | Overall acceptance | 9.6% (480 of 5,000) |
@@ -61,17 +61,17 @@ A bank ran a personal loan campaign on 5,000 customers, and only about 1 in 10 a
 | Online banking, credit card | No meaningful difference (about 9 to 11%) |
 | Best segment | Income 100K+, Graduate/Professional, spend 3K+: **95.65%** (242 of 253 customers) |
 
-## Recommendations
+Recommendations
 - Target customers earning above 100K, especially Graduate/Professional.
 - Prioritise existing CD account holders.
 - Focus on customers spending above 3K a month on cards.
 - Skip customers earning under 50K.
 - Do not target by age, online banking or credit card ownership.
 
-## Limitations and Future Work
+Limitations and Future Work
 This is descriptive analysis of a single campaign. A next step would be a prediction model such as logistic regression or a decision tree.
 
-## Team
+Team
 - Mohd Asim siddiqui
 - Arisha Fatima
 - Prerna Singh
