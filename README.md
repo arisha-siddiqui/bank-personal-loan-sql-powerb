@@ -34,13 +34,13 @@ Data Cleaning
 
  Dashboard
 Page 1: Overview.** KPI cards, loan status donut, acceptance rate by income band and education level, with age group and family size slicers.
-![Overview](powerbi/screenshots/PAGE_1.png)
+![Overview](powerbi/screenshots/PAGE1.png)
 
 Page 2: Behaviour.** Acceptance rate by CD account, card spend, online banking and credit card; income vs card spend scatter plot; income × education matrix.
-![Behaviour](powerbi/screenshots/PAGE_2.png)
+![Behaviour](powerbi/screenshots/PAGE2.png)
 
 Page 3: Targeting.** Top customer segments, key insight and recommendations.
-![Targeting](powerbi/screenshots/PAGE_3.png)
+![Targeting](powerbi/screenshots/PAGE3.png)
 
 DAX Measures
 - Total Customers
